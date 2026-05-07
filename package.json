@@ -1,0 +1,27 @@
+{
+  "name": "gestao-academica",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão Acadêmica - Frontend + Backend",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:build": "cd backend && npm run build",
+    "backend:start": "cd backend && npm start",
+    "backend:seed": "cd backend && npm run seed",
+    "backend:db:create": "cd backend && npm run db:create",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "dev": "npm run backend:dev",
+    "start": "npm run frontend:start",
+    "build": "npm run backend:build && npm run frontend:build"
+  },
+  "keywords": [
+    "gestao-academica",
+    "education",
+    "academic"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
