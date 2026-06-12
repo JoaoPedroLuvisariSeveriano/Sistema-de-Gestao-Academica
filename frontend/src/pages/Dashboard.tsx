@@ -28,7 +28,7 @@ const Dashboard: React.FC = () => {
         ]);
 
         setStats({
-          students: studentsRes.data.length || 0,
+          students: studentsRes.data.total || (studentsRes.data.data && studentsRes.data.data.length) || studentsRes.data.length || 0,
           courses: coursesRes.data.length || 0,
           disciplines: disciplinesRes.data.length || 0,
           enrollments: enrollmentsRes.data.length || 0,
